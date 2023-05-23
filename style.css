@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --Btn-green:rgb(62, 150, 44);
+    --Canvas-grey:rgb(218, 211, 211);
+    --Bg-grey:rgb(245, 237, 237);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Bg-grey);
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+section{
+    display: flex;
+}
+.cat, 
+.dog,
+.fox{
+    height: 80vh;
+    width: 33vw;
+    background-color: var(--Canvas-grey);
+    margin: 25px 20px;
+    border-radius: 0.5rem;
+    
+}
+.cat img,
+.dog img,
+.fox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.get-animals{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    padding: 10px 20px;
+    outline: none;
+    background: none;
+    border: 2px solid var(--Btn-green);
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+button:hover{
+    background-color: var(--Btn-green);
+    color: white;
+}
